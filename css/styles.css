@@ -2204,3 +2204,10 @@ nav .nav-group.right {
 #admin .btn-primary {
   width: 100%;
 }
+
+/* -----------------------------diseño */
+
+.agregaRecetas{
+  font-size: 16px;
+  text-transform: uppercase;
+}

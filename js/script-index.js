@@ -1,5 +1,19 @@
 $(document).ready( function(){
 
+
+//1 etapa
+//Ocultar la flecha cuando se muestre.
+	$(".flecha").hide() //oculto mediante clase. 
+		console.log("me han ocultado");
+
+;
+
+//Dentro de la funcion asignar "nuevas recetas" al parrafo
+function printNews(e){
+	$(".agregaRecetas").append('<strong>nuevas recetas</strong>');
+};
+ printNews();
+
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
