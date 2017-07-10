@@ -35,6 +35,7 @@ function renderHighlightedRecipes(recipesArray) {
 		console.log("no se cumple la condicion");
 	}
 }
+renderHighlightedRecipes();
 }
 
 /*
@@ -43,7 +44,15 @@ function renderHighlightedRecipes(recipesArray) {
 * Aqui se tiene que crear el HTML que esta en el 
 * archivo "templates/templates-recipe.html"
 */
+var agregarInfo= $("<a></a>");
+		agregarInfo.addClass("item-recipe");
+		agregarInfo.attr("href", "#");
+		$("div.list-recipes").append(agregarInfo);
+		
+
 function renderRecipe(recipe) {
+	
+
 	console.log('Voy a pintar la receta: ', recipe);
 }
 
