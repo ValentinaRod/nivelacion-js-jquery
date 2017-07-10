@@ -14,6 +14,8 @@ function printNews(e){
 };
  printNews();
 
+ /*-------------------------------------------------*/
+
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
@@ -25,7 +27,14 @@ function printNews(e){
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
+	for (var i= 0;i<recipesArray.length; i++){
+		if (highlighted == true) {
+			return(renderRecipe(recipesArray));
+			console.log('Recipes: ', recipesArray);
+		} else {
+		console.log("no se cumple la condicion");
+	}
+}
 }
 
 /*
